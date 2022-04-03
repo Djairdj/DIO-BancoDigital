@@ -4,12 +4,12 @@ public class Main {
     public static void main(String[] args) {
         Cliente djair = new Cliente();
         djair.setNome("Djair");
-        Cliente julyh = new Cliente();
-        julyh.setNome("Julyh");
+        Cliente julia = new Cliente();
+        julia.setNome("Julyh");
         Conta cCorrente = new ContaCorrente(djair);
         cCorrente.depositar(100);
 
-        Conta cPoupanca = new ContaPoupanca(julyh);
+        Conta cPoupanca = new ContaPoupanca(julia);
         cPoupanca.depositar(50);
 
         cCorrente.imprimirExtrato();
